@@ -17,33 +17,23 @@ Le dépôt doit rester cohérent dans le temps.
 
 ## Organisation du dépôt
 
-Chaque problème possède son propre dossier.
+Chaque problème possède son propre dossier, directement à la racine du dépôt (pas de regroupement par
+catégorie dans l'arborescence).
 
 ```
-category/
-└── problem_name/
-    ├── solution.py
-    ├── README.md
-    └── sample_input.txt (optionnel)
+problem_name/
+├── solution.py
+├── README.md
+└── sample_input.txt (optionnel)
 ```
 
-Les catégories correspondent au principal thème algorithmique :
+Le thème algorithmique principal (implementation, math, greedy, graphs, dynamic_programming, strings,
+sorting, searching, data_structures, geometry, simulation, miscellaneous...) est indiqué dans le README de
+chaque problème (champ **Thème**), pas dans l'arborescence : le classement par thème est géré séparément
+dans la synthèse de révision (Google Doc), pas par la structure de dossiers.
 
-- implementation
-- math
-- greedy
-- graphs
-- dynamic_programming
-- strings
-- sorting
-- searching
-- data_structures
-- geometry
-- simulation
-- miscellaneous
-
-Si un problème appartient à plusieurs catégories, choisir celle qui représente le concept principal utilisé
-pour la solution.
+Si un problème relève de plusieurs thèmes, choisir celui qui représente le concept principal utilisé pour
+la solution.
 
 ## solution.py
 
@@ -69,6 +59,8 @@ Chaque problème possède un README suivant exactement cette structure.
 ### Nom du problème
 
 Lien vers Kattis
+
+Thème : (le thème algorithmique principal, voir Organisation du dépôt)
 
 ### Résumé
 
